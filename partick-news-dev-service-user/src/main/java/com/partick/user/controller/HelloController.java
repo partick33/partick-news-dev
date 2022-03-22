@@ -2,6 +2,7 @@ package com.partick.user.controller;
 
 import com.partick.api.controller.user.HelloControllerApi;
 import com.partick.common.result.CommonJsonResult;
+import com.partick.common.utils.RedisOperator;
 import com.partick.model.pojo.AppUser;
 import com.partick.user.service.HelloService;
 import org.slf4j.Logger;
@@ -21,9 +22,13 @@ public class HelloController implements HelloControllerApi {
     @Resource
     private HelloService helloService;
 
+    @Resource
+    private RedisOperator redisOperator;
+
     @Override
     public Object Hello() {
         AppUser appUser = helloService.selectAppUser();
-        return CommonJsonResult.ok(appUser);
+        redisOperator.set("age", "18");
+        return CommonJsonResult.ok(redisOperator.get("age"));
     }
 }
