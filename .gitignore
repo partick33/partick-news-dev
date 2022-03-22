@@ -1,6 +1,6 @@
 logs/
 .idea/
-**/target/
+**/target/*
 **/src/test/**/target/
 partick-news-dev-common/src/main/resources/tencentCloud.properties
 
