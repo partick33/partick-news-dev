@@ -1,10 +1,11 @@
 server:
-  port: 8003
   tomcat:
     uri-encoding: UTF-8
     max-swallow-size: -1
 
 spring:
+  profiles:
+    active: dev #yml中配置文件的环境配置，dev：开发环境，prod：生产环境
   application:
     name: service-user
   jackson:
