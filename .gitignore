@@ -2,6 +2,7 @@ logs/
 .idea/
 !**/src/main/**/target/
 !**/src/test/**/target/
+partick-news-dev-common/src/main/resources/tencentCloud.properties
 
 ### STS ###
 .apt_generated
