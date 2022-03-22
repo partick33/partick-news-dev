@@ -3,7 +3,7 @@ logs/
 target/
 **/src/test/**/target/
 partick-news-dev-common/src/main/resources/tencentCloud.properties
-
+partick-news-dev-service-user/src/main/resources/application-dev.yml
 ### STS ###
 .apt_generated
 .classpath
