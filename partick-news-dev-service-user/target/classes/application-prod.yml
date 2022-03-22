@@ -1,5 +1,0 @@
-server:
-  port: 8103
-  tomcat:
-    uri-encoding: UTF-8
-    max-swallow-size: -1
