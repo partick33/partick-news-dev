@@ -1,8 +1,8 @@
 package com.partick.api.controller.user;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * api的作用：
@@ -13,12 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
  * 现在所有的接口都在此暴露，实现都是在各自的微服务中
  * @author partick_peng
  */
+@Api(value = "部署集合测试Api")
 public interface HelloControllerApi {
 
     /**
      * 项目整合测试api
      * @return
      */
+    @ApiOperation(value = "hello测试方法接口",notes = "hello方法",httpMethod = "GET")
     @GetMapping("/hello")
-    public Object Hello();
+    Object Hello();
 }

@@ -1,2 +1,6 @@
+com\partick\user\service\impl\HelloServiceImpl.class
 com\partick\user\UserApplication.class
+com\partick\user\service\HelloService.class
 com\partick\user\controller\HelloController.class
+com\partick\user\mapper\FansMapper.class
+com\partick\user\mapper\AppUserMapper.class

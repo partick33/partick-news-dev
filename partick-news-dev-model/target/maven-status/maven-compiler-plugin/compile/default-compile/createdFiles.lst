@@ -1,0 +1,6 @@
+com\partick\model\pojo\Article.class
+com\partick\model\pojo\Fans.class
+com\partick\model\pojo\AppUser.class
+com\partick\model\pojo\Comments.class
+com\partick\model\pojo\AdminUser.class
+com\partick\model\pojo\Category.class
