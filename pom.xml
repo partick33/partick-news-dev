@@ -12,6 +12,7 @@
         <module>partick-news-dev-model</module>
         <module>partick-news-dev-service-api</module>
         <module>partick-news-dev-service-user</module>
+        <module>partick-news-dev-database</module>
     </modules>
 
     <parent>
@@ -91,7 +92,6 @@
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus-boot-starter.version}</version>
             </dependency>
-
 
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>

@@ -10,6 +10,7 @@
         <module name="partick-news-dev-common" />
         <module name="partick-news-dev-model" />
         <module name="partick-news-dev-service-user" />
+        <module name="partick-news-dev-database" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,6 +18,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="partick-news-dev" options="" />
       <module name="partick-news-dev-common" options="-parameters" />
+      <module name="partick-news-dev-database" options="-parameters" />
       <module name="partick-news-dev-model" options="-parameters" />
       <module name="partick-news-dev-service-api" options="-parameters" />
       <module name="partick-news-dev-service-user" options="-parameters" />
