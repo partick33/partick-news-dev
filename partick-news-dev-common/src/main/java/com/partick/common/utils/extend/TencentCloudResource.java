@@ -1,4 +1,4 @@
-package com.partick.common.utils;
+package com.partick.common.utils.extend;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
@@ -20,8 +20,6 @@ public class TencentCloudResource {
     private String smsSdkAppId;
 
     private String templateId;
-
-    private String signName;
 
     public String getSecretId() {
         return secretId;
@@ -55,11 +53,4 @@ public class TencentCloudResource {
         this.templateId = templateId;
     }
 
-    public String getSignName() {
-        return signName;
-    }
-
-    public void setSignName(String signName) {
-        this.signName = signName;
-    }
 }
