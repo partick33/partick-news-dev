@@ -1,5 +1,7 @@
 package com.partick.api.interceptor;
 
+import com.partick.common.exception.CommonException;
+import com.partick.common.result.ResponseStatusEnum;
 import com.partick.common.utils.IPUtil;
 import com.partick.common.utils.RedisOperator;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -34,7 +36,7 @@ public class PassportInterceptor implements HandlerInterceptor {
         //查看缓存是否存在
         boolean isExist = redisOperator.keyIsExist(MOBILE_SMSCODE + ":" + userIp);
         if (isExist) {
-            System.out.println("短信发送频率太大");
+            CommonException.display(ResponseStatusEnum.SMS_NEED_WAIT_ERROR);
             return false;
         }
         return true;
